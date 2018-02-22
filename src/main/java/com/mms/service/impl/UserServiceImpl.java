@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService{
 	public Users findUserBySearch(Users user) {
 		UsersExample example = new UsersExample();
 		Criteria criteria = example.createCriteria();
-		criteria.andUsernameEqualTo(user.getUsername());
+		criteria.andLoginNameEqualTo(user.getLoginName());
 		//criteria.andUsernameIsNull();
 		criteria.andPasswordEqualTo(user.getPassword());
 		//criteria.andPasswordIsNull();
