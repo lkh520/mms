@@ -67,7 +67,7 @@ body {
 							<div class="error"></div>
 							<div class="form loginBox">
 								<form method='post' id="loginForm" enctype='application/json'>
-									<input class="form-control" type="text" placeholder="Email" name="username">
+									<input class="form-control" type="text" placeholder="Email" name="loginName">
 									<input class="form-control" type="password" placeholder="Password" name="password"> 
 									<input class="btn btn-default btn-login" type="button" value="{{ enters }}" onclick="loginAjax()">
 								</form>
@@ -78,7 +78,8 @@ body {
 						<div class="content registerBox" style="display: none;">
 							<div class="form">
 								<form method="post" id="regForm"  enctype='application/json'>
-									<input class="form-control" type="text" placeholder="Email" name="username"> 
+									<input class="form-control" type="text" placeholder="Email" name="loginName"> 
+									<input class="form-control" type="hidden" name="orgId" value="1079"> 
 									<input class="form-control" type="password" placeholder="Password" name="password"> 
 									<input class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation"> 
 									<input class="btn btn-default btn-login" type="button" value="{{ enters }}" onclick="regAjax()">

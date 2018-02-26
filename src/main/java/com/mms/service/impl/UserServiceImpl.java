@@ -7,10 +7,12 @@
  */
 package com.mms.service.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.github.pagehelper.PageHelper;
 import com.mms.mapper.UsersMapper;
 import com.mms.model.Users;
@@ -29,6 +31,9 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public int addUser(Users user) {
+		user.setCreateTime(new Date());
+		user.setVsername(user.getLoginName());
+		user.setLoginCount(new Long(0));
 		return usersMapper.insertSelective(user);
 	}
 	@Override
