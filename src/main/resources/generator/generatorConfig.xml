@@ -44,7 +44,7 @@
                 enableDeleteByExample="false" enableSelectByExample="false"  
                 selectByExampleQueryId="false"> --> 
 		<table tableName="mms_user_t" domainObjectName="Users" >  
-                <property name="useActualColumnNames" value="false" />  
-            </table> 
+            <property name="useActualColumnNames" value="false" />  
+        </table> 
 	</context>
 </generatorConfiguration>
