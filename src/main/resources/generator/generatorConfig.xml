@@ -24,18 +24,18 @@
 		</javaTypeResolver>
 		<!-- 生成模型的包名和位置 -->
 		<javaModelGenerator targetPackage="com.mms.model"
-			targetProject="C:/Users/lkh/workspace/mms-web/src/main/java">
+			targetProject="C:/Users/lkh/git/mms/src/main/java">
 			<property name="enableSubPackages" value="false" />
 			<!-- 从数据库返回的值被清理前后的空格 -->  
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- 生成映射文件的包名和位置 -->
 		<sqlMapGenerator targetPackage="mapping"
-			targetProject="C:/Users/lkh/workspace/mms-web/src/main/resources/">
+			targetProject="C:/Users/lkh/git/mms/src/main/resources/">
 		</sqlMapGenerator>
 		<!-- 生成DAO的包名和位置 -->
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="com.mms.mapper" targetProject="C:/Users/lkh/workspace/mms-web/src/main/java">
+			targetPackage="com.mms.mapper" targetProject="C:/Users/lkh/git/mms/src/main/java">
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 		<!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名 -->

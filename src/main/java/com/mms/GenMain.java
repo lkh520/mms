@@ -49,4 +49,7 @@ public class GenMain {
             e.printStackTrace();
         }
     }
+    public static void main(String[] args) {
+		GenMain.gen();
+	}
 }
