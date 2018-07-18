@@ -16,7 +16,7 @@
 		</commentGenerator>
 		<!--数据库链接URL，用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://localhost:3306" userId="root" password="1234">
+			connectionURL="jdbc:mysql://localhost:3306/mms" userId="root" password="1234">
 		</jdbcConnection>
 		<!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer true，把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal --> 
 		<javaTypeResolver>
@@ -43,8 +43,30 @@
 		<!-- enableCountByExample="false" enableUpdateByExample="false"  
                 enableDeleteByExample="false" enableSelectByExample="false"  
                 selectByExampleQueryId="false"> --> 
-		<table tableName="mms_user_t" domainObjectName="Users" >  
-            <property name="useActualColumnNames" value="false" />  
-        </table> 
+		<table tableName="mms_user_t" domainObjectName="Users" 
+				enableCountByExample="false" enableUpdateByExample="false"  
+                enableDeleteByExample="false" enableSelectByExample="false"  
+                selectByExampleQueryId="false">  
+        </table>
+		<table tableName="mms_role_t" domainObjectName="Roles" 
+				enableCountByExample="false" enableUpdateByExample="false"  
+                enableDeleteByExample="false" enableSelectByExample="false"  
+                selectByExampleQueryId="false">  
+        </table>
+		<table tableName="mms_right_t" domainObjectName="Rights" 
+				enableCountByExample="false" enableUpdateByExample="false"  
+                enableDeleteByExample="false" enableSelectByExample="false"  
+                selectByExampleQueryId="false">  
+        </table>
+		<table tableName="mms_group_t" domainObjectName="Groups" 
+				enableCountByExample="false" enableUpdateByExample="false"  
+                enableDeleteByExample="false" enableSelectByExample="false"  
+                selectByExampleQueryId="false">  
+        </table>
+		<table tableName="mms_org_t" domainObjectName="Orgs" 
+				enableCountByExample="false" enableUpdateByExample="false"  
+                enableDeleteByExample="false" enableSelectByExample="false"  
+                selectByExampleQueryId="false">  
+        </table>
 	</context>
 </generatorConfiguration>
