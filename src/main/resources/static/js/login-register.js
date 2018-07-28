@@ -49,11 +49,10 @@ function loginAjax(){
 	var data = $("#loginForm").serializeJson();
 	$.ajax({
 	    type: "POST",
-	    url: "login",
+	    url: "user/login",
 	    contentType: "application/json;charset=utf-8",  
 	    data: JSON.stringify(data),// 要提交的表单
 	    success: function (msg) {
-	    	debugger
 			if (msg) {
 				window.location.replace("home/index.html");
 			} else {
@@ -70,14 +69,13 @@ function loginAjax(){
 function regAjax(){
     /*   Remove this comments when moving to server */
 	var data = $("#regForm").serializeJson();
-	debugger
 	if(data.password!=data.password_confirmation){
 		shakeModal();
 		return;
 	}
 	$.ajax({
 	    type: "POST",
-	    url: "register",
+	    url: "user/register",
 	    contentType: "application/json;charset=utf-8",  
 	    data: JSON.stringify(data),// 要提交的表单
 	    success: function (msg) {
