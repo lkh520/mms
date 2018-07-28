@@ -34,7 +34,7 @@ public class Swagger2Config {
 	private final String SWAGGER2_API_BASEPACKAGE = "com.mms.controller";
 	private final String SWAGGER2_API_TITLE = "MMS-API";
 	private final String SWAGGER2_API_DESCRIPTION = "用户管理";
-	private final String SWAGGER2_API_CONTACT = "lkh";
+	private final String SWAGGER2_API_CONTACT = "lkh520";
 	private final String SWAGGER2_API_VERSION = "1.0";
 
 	/**
@@ -57,7 +57,7 @@ public class Swagger2Config {
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
 				.title(SWAGGER2_API_TITLE)
-				.contact(new Contact("lkh520", "", "lkh520@qq.com"))
+				.contact(new Contact(SWAGGER2_API_CONTACT, "", "lkh520@qq.com"))
 				.description(SWAGGER2_API_DESCRIPTION)
 				.version(SWAGGER2_API_VERSION)
 				.build();
