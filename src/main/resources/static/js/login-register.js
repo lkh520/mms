@@ -54,7 +54,7 @@ function loginAjax(){
 	    data: JSON.stringify(data),// 要提交的表单
 	    success: function (msg) {
 	    	debugger
-			if (msg == 1) {
+			if (msg) {
 				window.location.replace("home/index.html");
 			} else {
 				//Simulate error message from the server 

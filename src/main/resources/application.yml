@@ -35,9 +35,23 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
+  
+#  swagger:
+#    enabled: true
+#    title: oms-API
+#    description: API文档
+#    base-package: com.mms.controller
+#    base-path: /**
+#    exclude-path: /error
+#    version: 1.0
+    
 mybatis:
   typeAliasesPackage: com.mms.model
   mapperLocations: classpath:mapping/*.xml
+logging:
+  level:
+    com.mms.mapper: DEBUG
+  
 #pagehelper分页插件
 pagehelper:
     #helperDialect: PostgreSQL

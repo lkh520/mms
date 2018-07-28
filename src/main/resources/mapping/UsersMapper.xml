@@ -38,7 +38,7 @@
 		<include refid="Base_Column_List" />
 		from mms_user_t
 		<where>
-			<trim prefixOverrides="AND |OR ">
+			<trim suffixOverrides="AND |OR ">
 				<if test="userId != null">
 					user_id = #{userId,jdbcType=BIGINT} AND
 				</if>
