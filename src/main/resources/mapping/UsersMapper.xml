@@ -46,7 +46,7 @@
 					org_id = #{orgId,jdbcType=BIGINT} AND
 				</if>
 				<if test="loginName != null">
-					instr(login_name, #{loginName,jdbcType=VARCHAR}) > 0 AND
+					login_name = #{loginName,jdbcType=VARCHAR} AND
 				</if>
 				<if test="password != null">
 					password = #{password,jdbcType=VARCHAR} AND

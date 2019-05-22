@@ -47,9 +47,9 @@ public class UserController {
     }
     
     @ApiOperation(value="findAllUser", notes="分页查所有用户", produces = "application/json")
-    @RequestMapping(value = "/all/{pageNum}/{pageSize}", method=RequestMethod.POST)
-    public Object findAllUser(@RequestBody Users user, @PathVariable("pageNum") int pageNum, @PathVariable("pageSize") int pageSize){
+    @RequestMapping(value = "/all/{pageNum}/{pageSize}", method=RequestMethod.GET)
+    public Object findAllUser(@PathVariable("pageNum") int pageNum, @PathVariable("pageSize") int pageSize){
     	PageHelper.startPage(pageNum, pageSize);
-        return usersMapper.selectUserBySearch(user);
+        return usersMapper.selectUserBySearch(null);
     }
 }
